@@ -1,10 +1,11 @@
+import sys
 n, m, k = map(int, input().split())
 numlist = [] #정리한 값
 inputlist = [] #입력한 값
 for i in range(n):
     numlist.append(0)
 for i in range(k):
-    inputlist.append(tuple(input().split()))
+    inputlist.append(tuple(map(str, sys.stdin.readline().split())))
 for i in range(k):
     for j in range(m):
         for q in range(n):

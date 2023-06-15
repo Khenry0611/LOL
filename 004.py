@@ -1,9 +1,10 @@
+import sys
 N, M = map(int, input().split())
 lista = []
 time = 0
 zerocount = 0
 for i in range(N):
-    lista.append(int(input()))
+    lista.append(int(sys.stdin.readline()))
 while 1:
     time += 1
     if lista[0] > lista[1]:
